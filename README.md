@@ -13,7 +13,7 @@ An interactive web application that visualizes real-time earthquake data from th
 - **Manual Refresh**: Button to manually fetch the latest data
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -57,7 +57,7 @@ If you're using VS Code:
 
 Simply open the `index.html` file directly in your browser. Note: Some features may not work due to CORS restrictions.
 
-## 🧪 ESLint Integration
+## ESLint Integration
 
 This project includes ESLint configuration for code quality and consistency.
 
@@ -212,7 +212,6 @@ Potential improvements for the application:
 - **Leaflet.js**: For the excellent mapping library
 - **D3.js**: For powerful data visualization capabilities
 - **OpenStreetMap**: For map tiles and data
+- **Claude AI**: For beautifying the entire web application from the initial version of the demo.
 
 ---
-
-**Happy Earthquake Tracking! 🌍📊**
