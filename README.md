@@ -108,7 +108,7 @@ The application uses a color-coded system to represent earthquake severity:
 | 5 - 6     | 🟠 Orange | Strong earthquakes |
 | 6+        | 🔴 Red | Severe earthquakes |
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - **HTML5**: Structure and semantic markup
 - **CSS3**: Modern styling with flexbox and grid
@@ -118,7 +118,7 @@ The application uses a color-coded system to represent earthquake severity:
 - **USGS Earthquake API**: Real-time earthquake data source
 - **ESLint**: Code quality and linting
 
-## 📊 API Information
+## API Information
 
 **Data Source**: [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/)
 
@@ -152,7 +152,7 @@ The application refreshes earthquake data:
 - **Manually**: Click the "🔄 Refresh Data" button
 - **Last Updated**: Displayed in the info bar
 
-## 🌐 Browser Compatibility
+## Browser Compatibility
 
 - Chrome (latest)
 - Firefox (latest)
@@ -163,9 +163,9 @@ The application refreshes earthquake data:
 ## Mobile Support
 
 The application is fully responsive and works on:
-- 📱 Smartphones
-- 📱 Tablets
-- 💻 Desktop computers
+- Smartphones
+- Tablets
+- Desktop computers
 
 ## Troubleshooting
 
