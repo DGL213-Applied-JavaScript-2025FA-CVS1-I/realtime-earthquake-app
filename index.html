@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Earthquake Visualization</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Real-Time Earthquake Visualization</h1>
+            <p class="subtitle">Interactive map showing recent seismic activity worldwide</p>
+        </header>
+
+        <div class="info-bar">
+            <div class="info-item">
+                <span class="label">Last Updated:</span>
+                <span id="last-updated" class="value">Loading...</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Total Earthquakes:</span>
+                <span id="total-earthquakes" class="value">0</span>
+            </div>
+            <div class="info-item">
+                <button id="refresh-btn" class="refresh-button">🔄 Refresh Data</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="legend">
+                    <h3>Magnitude Scale</h3>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #00FF00;"></span>
+                        <span>Minor (&lt;3)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #90EE90;"></span>
+                        <span>Light (3-4)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #FFFF00;"></span>
+                        <span>Moderate (4-5)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #FF8000;"></span>
+                        <span>Strong (5-6)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color" style="background-color: #FF0000;"></span>
+                        <span>Severe (6+)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Earthquake Distribution by Magnitude</h2>
+                <div id="chart"></div>
+                <p class="chart-description">
+                    Hover over bars to highlight earthquakes on the map. Click for details.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data provided by <a href="https://earthquake.usgs.gov/" target="_blank">USGS Earthquake Hazards Program</a></p>
+        </footer>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+            crossorigin=""></script>
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Application JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
